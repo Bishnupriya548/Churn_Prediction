@@ -1,4 +1,4 @@
-# Churn_Prediction
+<img width="1357" height="672" alt="image" src="https://github.com/user-attachments/assets/3b927b91-43cf-4d75-8740-8dae57ed1d36" /># Churn_Prediction
 # 📉 Telco Customer Churn Prediction
 
 ## 📌 Project Overview
@@ -29,6 +29,10 @@ The dataset used is the **Telco Customer Churn** dataset from Kaggle.
 * **Split:** Data was split into 80% Training and 20% Testing sets.
 
 ## 📈 Results & Business Insights
+<img width="669" height="579" alt="image" src="https://github.com/user-attachments/assets/ef3dc439-4fb4-48c2-a7dc-daf2f0af0f07" />
+
+<img width="1293" height="665" alt="image" src="https://github.com/user-attachments/assets/23a7910c-ac0a-4a72-a656-1d0c59455529" />
+
 * **Model Accuracy:** ~79%
 * **Precision/Recall:** The model successfully identifies the majority of non-churners and significant patterns in churners.
 
@@ -50,4 +54,4 @@ According to the Feature Importance analysis, the top factors contributing to ch
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/churn-prediction.git](https://github.com//Bishnupriya548/churn-prediction.git)
+   git clone [https://github.com/Bishnupriya548/churn-prediction.git](https://github.com/Bishnupriya548/churn-prediction.git)
