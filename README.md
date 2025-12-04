@@ -12,40 +12,42 @@ The dataset used is the **Telco Customer Churn** dataset from Kaggle.
 
 ## 🛠️ Tech Stack
 * **Language:** Python
-* **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Imbalanced-learn (SMOTE)
+* **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
 
 ## ⚙️ Methodology
 
 ### 1. Data Preprocessing
 * **Cleaning:** Handled missing values in the `TotalCharges` column by imputing the median.
-* **Encoding:** Applied One-Hot Encoding to categorical variables (e.g., Internet Service, Payment Method) and Label Encoding to binary variables.
-* **Scaling:** Standardized numerical features (`tenure`, `MonthlyCharges`) using `StandardScaler` to bring them to a common scale.
+* **Feature Engineering:** * Dropped irrelevant columns (e.g., `customerID`).
+    * Converted `TotalCharges` to numeric type.
+* **Encoding:** Applied **One-Hot Encoding** to categorical variables (e.g., Internet Service, Payment Method) and **Label Encoding** to binary variables.
+* **Scaling:** Standardized numerical features (`tenure`, `MonthlyCharges`) using `StandardScaler` to ensure the model treats all features equally.
 
-### 2. Handling Imbalance (Critical Step)
-The dataset was highly imbalanced (73% non-churn vs. 27% churn).
-* **Solution:** Applied **SMOTE (Synthetic Minority Over-sampling Technique)** on the training set.
-* **Result:** Balanced the class distribution, ensuring the model didn't just bias toward the majority class.
-
-### 3. Model Building
-* Used **Random Forest Classifier** for its ability to handle non-linear relationships and provide feature importance.
-* Split data into 80% Training and 20% Testing sets.
+### 2. Model Building
+* **Algorithm:** Random Forest Classifier.
+* **Why Random Forest?** It was chosen for its ability to handle large datasets with higher dimensionality and its resistance to overfitting compared to Decision Trees.
+* **Split:** Data was split into 80% Training and 20% Testing sets.
 
 ## 📈 Results & Business Insights
-* **Model Accuracy:** ~82%
-* **F1-Score:** ~0.80
+* **Model Accuracy:** ~79%
+* **Precision/Recall:** The model successfully identifies the majority of non-churners and significant patterns in churners.
 
 ### Key Drivers of Churn:
 According to the Feature Importance analysis, the top factors contributing to churn are:
 1.  **Contract Type:** Customers with **Month-to-Month** contracts are significantly more likely to leave.
-2.  **Tenure:** New customers (low tenure) are at higher risk.
-3.  **Internet Service:** Users with **Fiber Optic** internet showed higher churn rates (possibly due to cost or technical issues).
+2.  **Tenure:** New customers (low tenure) are at higher risk of leaving early.
+3.  **Monthly Charges:** Higher monthly costs correlate with higher churn rates.
 
 ## 🖼️ Visualizations
-*(Upload your graphs here)*
-* **Confusion Matrix:** Shows the balance between False Positives and False Negatives.
+
+* **Confusion Matrix:** visualizes the True Positives and True Negatives.
 * **Feature Importance Plot:** Visualizes which variables impact the prediction most.
+
+## 🔮 Future Improvements
+* **Hyperparameter Tuning:** Use GridSearch to optimize the Random Forest parameters (e.g., `max_depth`, `n_estimators`).
+* **Handling Class Imbalance:** Implement techniques like SMOTE or Class Weights to further improve recall for the minority class (Churners).
 
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/churn-prediction.git](https://github.com/yourusername/churn-prediction.git)
+   git clone [https://github.com/yourusername/churn-prediction.git](https://github.com//Bishnupriya548/churn-prediction.git)
