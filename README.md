@@ -29,9 +29,6 @@ The dataset used is the **Telco Customer Churn** dataset from Kaggle.
 * **Split:** Data was split into 80% Training and 20% Testing sets.
 
 ## 📈 Results & Business Insights
-<img width="669" height="579" alt="image" src="https://github.com/user-attachments/assets/ef3dc439-4fb4-48c2-a7dc-daf2f0af0f07" />
-
-<img width="1293" height="665" alt="image" src="https://github.com/user-attachments/assets/23a7910c-ac0a-4a72-a656-1d0c59455529" />
 
 * **Model Accuracy:** ~79%
 * **Precision/Recall:** The model successfully identifies the majority of non-churners and significant patterns in churners.
@@ -43,6 +40,9 @@ According to the Feature Importance analysis, the top factors contributing to ch
 3.  **Monthly Charges:** Higher monthly costs correlate with higher churn rates.
 
 ## 🖼️ Visualizations
+<img width="669" height="579" alt="image" src="https://github.com/user-attachments/assets/ef3dc439-4fb4-48c2-a7dc-daf2f0af0f07" />
+
+<img width="1293" height="665" alt="image" src="https://github.com/user-attachments/assets/23a7910c-ac0a-4a72-a656-1d0c59455529" />
 
 * **Confusion Matrix:** visualizes the True Positives and True Negatives.
 * **Feature Importance Plot:** Visualizes which variables impact the prediction most.
