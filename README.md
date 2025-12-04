@@ -1,4 +1,4 @@
-<img width="1357" height="672" alt="image" src="https://github.com/user-attachments/assets/3b927b91-43cf-4d75-8740-8dae57ed1d36" /># Churn_Prediction
+
 # 📉 Telco Customer Churn Prediction
 
 ## 📌 Project Overview
